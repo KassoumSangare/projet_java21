@@ -29,12 +29,12 @@ public record PasswordScore(
      */
     public String strengthLabel() {
         return switch (score) {
-            case 0 -> "🔴 Très faible";
-            case 1 -> "🟠 Faible";
-            case 2 -> "🟡 Moyen";
-            case 3 -> "🟢 Fort";
-            case 4 -> "🟢 Très fort";
-            default -> "❓ Inconnu";
+            case 0 -> "Très faible";
+            case 1 -> " Faible";
+            case 2 -> " Moyen";
+            case 3 -> " Fort";
+            case 4 -> " Très fort";
+            default -> " Inconnu";
         };
     }
 
